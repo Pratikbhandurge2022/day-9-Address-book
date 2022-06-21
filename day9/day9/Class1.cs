@@ -12,6 +12,7 @@ namespace AddressBook
         public String lastName;
         public String address;
         public String state;
+        public string city;
         public long zip;
         public long phoneNumber;
         public String email;
@@ -31,6 +32,18 @@ namespace AddressBook
             addressBook.zip = 412207;
             addressBook.phoneNumber = 1234567890;
             addressBook.email = "pb@gmail.com";
+
+        }
+
+        public static void SetContact(String firstName, String lastName, String address, String city, String state, long zip, long phNo)
+        {
+            AddressBook addressBook = new AddressBook();
+            addressBook.firstName = firstName;
+            addressBook.lastName = lastName;
+            addressBook.address = address;
+            addressBook.city = city;
+            addressBook.zip = zip;
+            addressBook.phoneNumber = phNo;
 
         }
     }
